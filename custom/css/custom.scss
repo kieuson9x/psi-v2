@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Bootstrap
+body {
+    margin: 0;
+    padding: 0;
+    color: #566787;
+    background: #f5f5f5;
+    font-family: "Varela Round", sans-serif;
+    font-size: 13px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .offcanvas-collapse {
+        position: fixed;
+        top: 56px;
+        bottom: 0;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        background-color: var(--gray-dark);
+        transition: -webkit-transform .3s ease-in-out;
+        transition: transform .3s ease-in-out;
+        transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+        transform: translateX(100%);
+        z-index: 1;
+    }
+
+    .offcanvas-collapse.open {
+        transform: translateX(-1rem);
+    }
+}
+
+.navbar {
+    .navbar-nav {
+        >li {
+            display: inline-block;
+            white-space: nowrap;
+        }
+    }
+}
+
+.offcanvas-collapse {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 60px 0 0;
+
+    &.open {
+        .nav {
+            padding-top: 5px;
+            margin-top: 5px;
+            padding-left: 10px;
+        }
+    }
+
+    a {
+        color:black;
+
+        &.active, &:hover {
+            color: #007bff;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-dialog {
+    .modal-content {
+        padding: 5px 10px;
+    }
+}

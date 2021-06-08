@@ -17,13 +17,13 @@
                                 <?php endfor ?>
                             </select>
                         </div>
-                        <button id="btnFilterInventories" type="button" class="btn btn-primary mr-1 w-40  flex items-center justify-center">
+                        <button id="btnFilterInventories" type="button" class="btn btn-primary mr-1 w-40  d-flex align-items-center justify-content">
                             <i class="material-icons">filter_alt</i>
                             Lọc
                         </button>
 
                         <div class="col-xs-4">
-                            <a href="#addProductPlanModal" class="btn btn-success flex items-center justify-center" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Thêm/Cập nhật số nhập
+                            <a href="#addProductPlanModal" class="btn btn-success d-flex align-items-center justify-content " data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Thêm/Cập nhật số nhập
                                     mới</span></a>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
 <div id="addProductPlanModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form name="add_inventory" method="POST" action="/php_action/createInventory.php" class="form-horizontal">
+            <form name="add_inventory" method="POST" action="/php_action/inventoryCreate.php" class="form-horizontal">
                 <div class="modal-header">
                     <h4 class="modal-title">Thêm/cập nhật số lượng nhập</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>

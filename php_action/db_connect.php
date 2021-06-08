@@ -12,6 +12,16 @@ if (!defined('URLROOT') || !defined('APPROOT')) {
 }
 
 if (!function_exists('data_get')) {
+  /**
+   *
+   * data get
+   *
+   * @param mixed $data  data
+   * @param string $path  path
+   * @param mixed $default default data
+   *
+   * @return mixed
+   */
   function data_get($data, $path, $default = null)
   {
     $paths = explode('.', $path);
@@ -112,5 +122,3 @@ class Database
     return $this->statement->rowCount();
   }
 }
-
-$db = new Database();

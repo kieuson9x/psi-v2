@@ -74,4 +74,8 @@ html {
 .modal-dialog .modal-content {
   padding: 5px 10px;
 }
+
+.dataTables_wrapper {
+  overflow-x: scroll;
+}
 /*# sourceMappingURL=custom.css.map */

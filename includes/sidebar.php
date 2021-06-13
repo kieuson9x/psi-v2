@@ -50,7 +50,7 @@
             if ($employee_level == 'Quản lý khu vực' || $employee_level == 'Admin') :
             ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo URLROOT . "/employee-sales.php" ?>">
+                    <a class="nav-link" href="<?php echo URLROOT . "/employee-sales.php" ?>"" id=" nav-link-employee-sales">
                         <i class="material-icons" style="font-size: 13px">inventory_2</i>
                         Bảng nhập nhập số sales
                     </a>

@@ -161,6 +161,7 @@ function bindingInventories(year) {
                 });
 
                 $('#table_inventories').DataTable({
+                    destroy: true,
                     responsive: true,
                     ordering: false
                 });

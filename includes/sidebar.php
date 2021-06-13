@@ -4,14 +4,14 @@
             <span class="nav-link">Xin chào <?php echo $_SESSION['full_name'] ?? ''; ?></span>
         </li>
 
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link" href="<?php echo URLROOT; ?>">
                 <i class="material-icons" style="font-size: 13px">
                     dashboard
                 </i>
                 Trang chủ
             </a>
-        </li>
+        </li> -->
 
         <?php if (isset($_SESSION['user_id'])) : ?>
             <?php
